@@ -1,0 +1,59 @@
+# States: stop (initial), north, east, south, west, avance, jump, pick, drop, quit (final)
+stop initial
+north
+east
+south
+west
+avance
+jump
+pick
+drop
+quit final
+
+# Transitions
+# Movement controls
+stop G avance
+avance A stop
+
+# Direction controls from stop state
+stop N north
+stop E east
+stop S south
+stop W west
+
+# Direction controls from advance state
+avance N north
+avance E east
+avance S south
+avance W west
+
+# Auto-advance from directions (epsilon transitions simplified)
+north e avance
+east e avance
+south e avance
+west e avance
+
+# Self-transitions for directions
+north N north
+east E east
+south S south
+west W west
+
+# Action states
+stop J jump
+jump e stop
+stop P pick
+pick e stop
+stop R drop
+drop e stop
+
+# Quit transitions (from every state to final)
+stop Q quit
+avance Q quit
+north Q quit
+east Q quit
+south Q quit
+west Q quit
+jump Q quit
+pick Q quit
+drop Q quit

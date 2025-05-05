@@ -1,0 +1,68 @@
+# Format: Word ExpectedResult
+# Valid transitions
+G true
+GA true
+GN true
+GE true
+GS true
+GW true
+N true
+Ne true
+E true
+Ee true
+S true
+Se true
+W true
+We true
+NQ true
+EQ true
+SQ true
+WQ true
+J true
+Je true
+P true
+Pe true
+R true
+Re true
+JQ true
+PQ true
+RQ true
+Q true
+
+# Direction transitions
+NN true
+EE true
+SS true
+WW true
+NNNN true
+EEEE true
+SSSS true
+WWWW true
+
+# Complex movement patterns
+GAN true
+GANE true
+GANES true
+GANESW true
+GANESWQ true
+
+# Action sequences
+JeP true
+JePeR true
+JePeRe true
+JePeReQ true
+
+# Invalid transitions
+JJ false
+PP false
+RR false
+AA false
+JP false
+JR false
+PJ false
+PR false
+RJ false
+RP false
+JA false
+PA false
+RA false
